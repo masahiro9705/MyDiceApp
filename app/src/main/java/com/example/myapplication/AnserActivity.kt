@@ -2,13 +2,13 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_result.*
+import kotlinx.android.synthetic.main.activity_anser.*
 
-class ResultActivity : AppCompatActivity() {
+class AnserActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_result)
+        setContentView(R.layout.activity_anser)
 //        ダイスの目だし
 
         val dice = (Math.random() * 6).toInt()
@@ -27,3 +27,4 @@ class ResultActivity : AppCompatActivity() {
         backButton.setOnClickListener { finish() }
     }
 }
+

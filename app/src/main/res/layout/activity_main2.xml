@@ -5,6 +5,39 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Main2Activity">
-
+        tools:context=".MainActivity">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/main"
+            android:id="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:scaleType="centerCrop"
+            android:scrollbarSize="4dp" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="1.0"/>
+    <Button
+            android:text="START"
+            android:layout_width="214dp"
+            android:layout_height="95dp"
+            android:id="@+id/nextButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            android:textSize="50sp"
+            android:fontFamily="cursive" android:textStyle="bold" android:textAllCaps="false"
+            android:textColorLink="#009688" android:textCursorDrawable="@color/colorPrimary"
+            android:textColorHighlight="#F44336" android:textColor="#FAF7F7" android:textColorHint="#E91E63"
+            android:shadowColor="#009688"
+            android:background="@drawable/background"
+            app:layout_constraintVertical_bias="0.83" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/diceImageView" android:layout_marginBottom="32dp"/>
+    <TextView
+            android:text="Dice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diceImageView" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/imageView" android:layout_marginTop="92dp"
+            app:layout_constraintHorizontal_bias="0.497" android:textSize="100dp" android:textStyle="bold"
+            android:fontFamily="serif" android:textColor="#000000"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
