@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1042258211351",
+    "firebase_url": "https://firecast-app-f846f.firebaseio.com",
+    "project_id": "firecast-app-f846f",
+    "storage_bucket": "firecast-app-f846f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042258211351:android:13c3c6a65bcbec53",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042258211351-2rum3enk72f8c0q01ckdvs1apllh1bct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYoHY4c5s5HJrdivxaLZ3-V9nglpbTNSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042258211351-2rum3enk72f8c0q01ckdvs1apllh1bct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
