@@ -5,4 +5,49 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"/>
+        tools:context=".MainActivity">
+    <Button
+            android:text="@string/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="320dp"
+            android:id="@+id/LoginButton" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.76"/>
+    <Button
+            android:text="@string/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="320dp"
+            android:id="@+id/SignUpButton" app:layout_constraintEnd_toStartOf="@+id/LoginButton"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="@string/e_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="97dp"
+            tools:layout_editor_absoluteX="46dp" android:id="@+id/emailLabel"/>
+    <TextView
+            android:text="@string/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="205dp"
+            tools:layout_editor_absoluteX="46dp" android:id="@+id/passLabel"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/emailEditText"
+            app:layout_constraintBottom_toBottomOf="@+id/emailLabel"
+            app:layout_constraintTop_toTopOf="@+id/emailLabel" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="58dp" android:autofillHints=""/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passEditText"
+            app:layout_constraintTop_toTopOf="@+id/passLabel" app:layout_constraintBottom_toBottomOf="@+id/passLabel"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="58dp" android:autofillHints=""/>
+    <android.support.constraint.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                          android:id="@+id/guideline" app:layout_constraintGuide_begin="237dp"
+                                          android:orientation="horizontal"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
